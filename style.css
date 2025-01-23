@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #f5a623;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.6rem;
+    color: #f5f5f5;
+    margin-left: 3rem;
+    transition: color 0.3s ease;
+}
+
+nav a.active, nav a:hover {
+    color: #f5a623;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 5%;
+    gap: 5rem;
+}
+
+.about-me-img img {
+    width: 30rem;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.about-me-img img:hover {
+    transform: scale(1.05);
+}
+
+.about-me-content h1 {
+    font-size: 4.5rem;
+    color: #f5f5f5;
+}
+
+.about-me-content h1 span {
+    color: #f5a623;
+}
+
+.about-me-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.about-me-content p {
+    font-size: 1.8rem;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;  
+}
+
+
+.typing-text span{
+    position:relative  
+}
+
+.typing-text span::before{
+    content: "sing" ;
+    color: #e59419;
+    animation: words 20s infinite
+}
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left:3px solid black ;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3PX solid
+    }        
+}
+
+@keyframes words{
+    0%,20%{
+        content:"sing"
+    }
+    21%,40%{
+        content:"draw"
+    }
+    41%,60%{
+        content:"watch anime" 
+    }
+    61%,80%{
+        content:"be physically fit" 
+    }
+    81%,100%{
+        content:"learn programming" 
+    }
+}
+
+@media(max-width:1000px){
+    .AboutMe{
+        gap:4rem
+    }
+}
+
+
+@media(max-width:995px){
+    .AboutMe{
+        flex-direction: column;
+        margin:5rem 4rem;
+    }
+
+    .AboutMe.AboutMe-Content h3{
+        font-size: 2.5rem ;
+    }
+
+    .AboutMe-Content h1{
+        font-size: 5rem;
+    }
+
+    .AboutMe-img img{
+        width: 70vh;
+        margin-top:4rem;
+    }
+
+}
+
+body {
+    font-size: 18px; 
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #e59419;
+    text-align: center;
+    border: 2px solid #e59419;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  p {
+    font-size: 15px;
+    text-align: center; 
+    margin: 3rem;
+  }
+
+
+body {
+    font-size: 18px;
+  }
+  
+ 
+  .skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center; 
+  }
+  
+  .skills-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px; 
+  }
+  
+  .skills-section .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .skills-column {
+    text-align: center;
+    width: 250px;
+  }
+  
+  .skills-section .text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+  .skills-section .cells .cell span {
+    font-size: 18px;
+  }
+   
+
+  .achievements-section {
+    padding: 20px 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.achievements-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.achievements-column {
+    text-align: center;
+    width: 300px; 
+    margin-bottom: 20px;
+}
+
+.achievements-column .text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.achievements-column .text img {
+    display: block;
+    margin: 10px auto;
+    width: 120px; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.achievements-column .cells {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.achievements-column .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.projects-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the project columns */
+    flex-wrap: wrap;
+}
+
+.project-column {
+    background-color: black; /* Light background for columns */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-column .text {
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #e59419;
+}
+
+.project-link h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-link h1:hover {
+    text-decoration: underline;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 20px; 
+    margin-bottom: 20px; 
+}
+
+.contact-section {
+    padding: 20px;
+    text-align: center; 
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #f5a623;
+    border-radius: 50%;
+    margin-right: 1rem;
+    color: #f5a623;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #f5a623;
+    color: #121212;
+    transform: scale(1.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    color: #121212;
+    background-color: #f5a623;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #e59419;
+}
